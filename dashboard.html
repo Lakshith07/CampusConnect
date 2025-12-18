@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | CampusConnect</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <h2>CampusConnect</h2>
+      <ul>
+        <li class="active">Dashboard</li>
+        <li id="createBtn">Create Request</li>
+        <li id="myRequestsBtn">My Requests</li>
+        <li id="logoutBtn">Logout</li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <h1 id="welcomeText">Welcome 👋</h1>
+        <p class="subtitle">Manage your help requests and activity</p>
+      </header>
+
+      <section class="stats">
+        <div class="stat-card">
+          <h3 id="totalRequests">0</h3>
+          <p>Total Requests</p>
+        </div>
+        <div class="stat-card">
+          <h3 id="openRequests">0</h3>
+          <p>Open</p>
+        </div>
+        <div class="stat-card">
+          <h3 id="closedRequests">0</h3>
+          <p>Closed</p>
+        </div>
+      </section>
+
+      <section class="actions">
+        <button onclick="goCreate()">➕ Create Help Request</button>
+        <button onclick="goMyRequests()">📄 View My Requests</button>
+      </section>
+
+      <section class="activity">
+        <h2>Recent Activity</h2>
+        <ul id="activityList"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="dashboard.js"></script>
+  </body>
+</html>
