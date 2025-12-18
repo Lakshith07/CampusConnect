@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusConnect | Student Help Platform</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h2 class="logo">CampusConnect</h2>
+      <div class="nav-buttons">
+        <a href="index.html" class="nav-link">Login</a>
+        <a href="signup.html" class="nav-btn">Sign Up</a>
+      </div>
+    </header>
+
+    <hr class="navbar-line" />
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Students Helping Students,<br /><span>Smarter.</span></h1>
+        <p>
+          A dashboard-based campus platform where students request notes, labs,
+          books, and guidance — all in one place.
+        </p>
+        <a href="signup.html" class="cta-btn">Get Started</a>
+      </div>
+
+      <div class="hero-card">
+        <div class="card">
+          <h3>📚 Request Help</h3>
+          <p>Post academic or guidance requests easily.</p>
+        </div>
+        <div class="card">
+          <h3>🤝 Offer Help</h3>
+          <p>Support peers and build credibility.</p>
+        </div>
+        <div class="card">
+          <h3>📊 Track Status</h3>
+          <p>View open & closed requests from your dashboard.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>CampusConnect © 2025 · Built for students</p>
+    </footer>
+    <script>
+      const user = JSON.parse(localStorage.getItem("currentUser"));
+      if (user) {
+        window.location.href = "dashboard.html";
+      }
+    </script>
+  </body>
+</html>
+
+
