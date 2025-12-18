@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Help Request</title>
+    <link rel="stylesheet" href="create-request.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Create Help Request</h2>
+
+      <input type="text" id="title" placeholder="Request Title" />
+
+      <select id="category">
+        <option value="">Select Category</option>
+        <option value="Notes">Notes</option>
+        <option value="Labs">Labs</option>
+        <option value="Books">Books</option>
+        <option value="Guidance">Guidance</option>
+      </select>
+
+      <textarea
+        id="description"
+        placeholder="Describe your requirement"
+      ></textarea>
+
+      <button onclick="createRequest()">Post Request</button>
+    </div>
+
+    <script src="create-request.js"></script>
+  </body>
+</html>
